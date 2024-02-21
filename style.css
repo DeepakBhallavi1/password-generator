@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --status-color:rgb(254, 24, 24);
+    --default-color: white;
+    --weak-color: rgba(255, 0, 0, 0.547);
+    --better-color: yellow;
+    --strong-color:  rgb(13, 145, 13);
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,67,235,0.26934523809523814) 0%, rgba(0,212,255,1) 100%);
+}
+.password-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20em;
+    height: 23em;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(95, 57, 25, 0);
+    box-shadow: 1px 1px 5px rgb(65, 61, 61);
+}
+.input-field{
+    width: 88%;
+    border: none;
+    margin: 20px;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.402);
+}
+.password-quality{
+    width: 88%;
+    margin: 0 20px;
+    padding: 0 10px;
+}
+#ps-quality{
+    width: 100%;
+    height: 4px;
+    border-radius: 150px;
+    background-color: white;
+}
+.quality-percent{
+    width: 100%;
+    height: 100%;
+    border-radius: 150px;
+    background-color: white;
+}
+
+#ps-status{
+    margin: 3px 2px;
+}
+
+.chars{
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.char-items{
+    padding: 3px;
+}
+
+.gen-password-btn{
+    width: 88%;
+    padding: 10px;
+    font-weight: 700;
+    border: none;
+    color: rgba(29, 28, 28, 0.882);
+    background-color: rgba(51, 233, 51, 0.911);
+    border-radius: 30px;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform .1s ease;
+}
+.gen-password-btn:hover{
+    background-color: rgba(51, 233, 51, 0.755);
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.pressed{
+    opacity: 0.6;
+}
+.Weak{
+    width: 25%;
+    background-color: red;
+}
+.Good{
+    width: 50%;
+    background-color: yellow;
+}
+.Better{
+    width: 75%;
+    background-color: rgb(109, 194, 48);
+}
+.Strong{
+    width: 100%;
+    background-color: rgb(8, 101, 8);
+}

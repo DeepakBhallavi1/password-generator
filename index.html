@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="shortcut icon" href="images/pg-icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="password-box">
+
+            <div class="password-field">
+                <input type="text" placeholder="Generate Password" class="input-field" readonly>
+                <div class="password-quality">
+                    <div id="ps-quality">
+                        <div class="quality-percent"></div>
+                    </div>
+                    <h4 id="ps-status"></h3>
+                </div>
+            </div>
+
+
+            <div class="chars">
+                <div class="char-items">
+                    <input type="checkbox" checked value="lowercase" class="item-box">
+                    <label for="lowercase"> lowercase characters </label>
+                </div>
+                <div class="char-items">
+                    <input type="checkbox" value="uppercase" class="item-box" />
+                    
+                    <label for="uppercase">uppercase characters</label>
+                </div>
+                <div class="char-items">
+                    <input type="checkbox" value="numbers" class="item-box">
+                    <label for="numbers">number from 0 to 9</label>
+                </div>
+                <div class="char-items">
+                    <input type="checkbox" value="special" class="item-box">
+                    <label for="special">special characters</label>
+                </div>
+            </div>
+
+            <button class="gen-password-btn"> GENERATE PASSWORD </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
